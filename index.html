@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leland IT Support</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+        header {
+            background: #0a3d62;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #074a7a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+        }
+        .hero {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .hero h1 {
+            color: #0a3d62;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #eef6fb;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .card1 {
+            background: #eef6fb;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            background: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .contact {
+            background: #eaf4ff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button {
+            background: #0a3d62;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #074a7a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Leland IT Support</h1>
+    <p>Free Help. Real Experience. Reliable Support.</p>
+</header>
+
+
+<div class="container">
+
+    <section id="home" class="hero">
+        <h1>Need IT Help?</h1>
+        <p>I offer free IT support to help solve your tech problems while gaining real-world experience.</p>
+        <p>No charge — just honest help.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services Offered</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Computer Troubleshooting</h3>
+                <p>Fix slow performance, crashes, and general issues.</p>
+            </div>
+            <div class="card">
+                <h3>Software Help</h3>
+                <p>Installation, setup, and troubleshooting for common software.</p>
+            </div>
+        </div>
+<div class="container">            
+            <div class="card">
+                <h3>General Tech Support</h3>
+                <p>Wi-Fi issues, account help, and everyday tech problems.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="location" class="contact">
+    <h2>Service Area</h2>
+    <p><strong>Location:</strong> Indian Hills, Frankfort, KY</p>
+</section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you need help, feel free to reach out anytime:</p>
+        <p><strong>Email:</strong> Leland.Support@gmail.com</p>
+        <p>I will respond as soon as possible.</p>
+
+        <button onclick="copyEmail()">Copy Email</button>
+        <p id="copiedMsg"></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Leland IT Support | Free Community Help</p>
+</footer>
+
+<script>
+    function copyEmail() {
+        navigator.clipboard.writeText("Leland.Support@gmail.com");
+        document.getElementById("copiedMsg").textContent = "Email copied to clipboard!";
+    }
+</script>
+
+</body>
+</html>
